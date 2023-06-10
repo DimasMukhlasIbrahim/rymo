@@ -1,0 +1,1336 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar */
+/* navbar body */
+.body-navbar {
+
+}
+
+.body-navbar::after{
+    content: '';
+    
+}
+
+.navbar {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+} 
+
+/* navbar logo */
+.navbar-logo {
+   margin-top: 1.5rem;
+
+}
+
+
+/* navbar link */
+.navbar .navbar-container .body-link-navbar {
+  margin-block-start: 2rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.navbar .navbar-container .link-navbar{
+    color:black;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    padding: 2vw;
+}
+
+.navbar .navbar-container a:hover {
+    color: coral;
+}
+
+/* navbar button */
+.navbar .navbar-container i {
+    cursor: pointer;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+} 
+
+.navbar .navbar-container .ri-align-right {
+    display: none;
+}
+
+
+.navbar .navbar-container i:hover {
+    color: coral;
+}
+
+/* btn sidebar */
+#main {
+  display: none;
+}
+
+
+
+.openbtn {
+background: none;
+  border: none;
+  font-family: 'poppins', sans-serif;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.openbtn:hover {
+  color: coral;
+}
+.openbtn a {
+  margin-inline-start: 5rem;
+}
+
+#closebtn {
+  font-size: 1.5rem;
+  font-family: 'poppins', sans-serif;
+  text-align: baseline;
+  display: none;
+}
+
+#closebtn  {
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+/* navbar button search */
+.search {
+    display: inline-block;
+    width: 11.5vw;
+    background-color: green;
+}
+
+.navbar .navbar-container input {
+    height: 3vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url(img/back.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position:top 20px center;
+}
+
+/* hero teks */
+.hero .teks ul{
+    /* background-color: red; */
+    position: absolute;
+    width: 54vw;
+    margin-top: 30vh;
+    margin-left: 5vh;
+    font-family: 'poppins', sans-serif;
+}
+
+.hero  h5 {
+    /* background-color: red; */
+    margin-block-end: -3rem;
+    font-weight: 300;
+}
+
+.hero .teks ul h1 {
+    font-size: 3rem;
+    margin-block-end: -1.5rem;
+}
+
+.hero .teks ul h1 span {
+    color: coral;
+}
+
+.hero .teks ul p {
+    /* background-color: brown; */
+    width:30rem;
+    
+}
+
+/* hero button */
+.hero .teks button {
+    font-size: 2vw;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 1vw 3vw;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero .teks button:hover {
+    color: coral;
+}
+
+/* brand section */
+.brand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* product new section */
+.product-new {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 30.9rem;
+  background-color: blue;
+
+  
+}
+
+
+.product-new .fragment {
+
+}
+
+.product-new .fragment img {
+  width:33.275vw;
+  height: 30.9rem;
+
+  object-fit: cover;
+  background-color: green;
+
+}
+
+
+/* product new teks */
+.product-new .fragment h2 {
+  margin-top: -17rem;
+  font-size: 2vw;
+  background-color: red;
+}
+
+/* product new button */
+.product-new .fragment button {
+  font-size: 1.5vw;
+  outline: none;
+  background-color: transparent;
+  border-top: 5px;
+  border-bottom: 5px;
+  margin-top: 4rem;
+
+}
+
+#button-product:hover {
+  color:rgba(245, 178, 178, 0.7);
+  cursor: pointer;
+}
+
+#button-product::before {
+  margin-left: auto;
+}
+
+#button-product::after, #button-product::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  transition: 0.5s;
+}
+
+#button-product:hover::after,#button-product:hover::before {
+  width: 100%;
+}
+
+/* product new 1 */
+.product-new .fragment .h2-1, .button-1 {
+  margin-left: 1vw;
+}
+
+/* product new 2 */
+.product-new .fragment .h2-2{
+margin-left: 2.5vw;
+}
+
+.product-new .fragment .button-2 {
+  margin-left: 12vw;
+}
+
+/* product new 3 */
+.product-new .fragment .h2-3 {
+  margin-left: 4vw;
+}
+
+.product-new .fragment .button-3 {
+  margin-left: 22vw;
+}
+  
+      /* dress section */
+      .featured .header-dress{
+        text-align: center;
+        position: relative;
+        }
+        
+        .featured .header-dress {
+          margin-top: 8rem;
+          margin-bottom: 5rem;
+        }
+        
+        .featured .header-dress h1::after{
+          content: "";
+          position: absolute;
+          display: block;
+          border-bottom: 2px solid coral;
+          margin-left: 44.5vw;
+          width: 10vw;
+          margin-top: 0.5rem;
+        }
+  
+
+/* featured section */
+
+/* body */
+.featured {
+  /* background-color: rgba(128, 128, 128, 0.171); */
+}
+
+/* header */
+.featured .header{
+text-align: center;
+position: relative;
+}
+
+
+.featured .header {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.featured .header h1::after{
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid coral;
+  margin-left: 44.5vw;
+  width: 10vw;
+  margin-top: 0.5rem;
+}
+
+/* content */
+.featured  ul {
+display: grid;
+/* background-color: purple; */
+grid-auto-flow: column;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+grid-template-columns: 2fr 2fr ;
+margin-left: -5vw;
+}
+
+/* img */
+.featured .content img{
+  display: flex;
+  display: block;
+  width: 35vh;
+  height: 40vh;
+  object-fit: cover;
+  cursor: pointer;
+  padding: 2rem 2rem;
+  transition: 0.3s all;
+  /* background-color: gray; */
+}
+
+.featured .content:hover img {
+  opacity: 0.7;
+}
+
+/* details */
+.featured .content .details {
+/* background-color: red; */
+padding: 0 3vh;
+text-align: center;
+margin-bottom: 10vh;
+}
+
+/* details */
+.featured .content .details .star {
+  color: #ffd355;
+  font-size: 2.5vh;
+  /* background-color: purple; */
+}
+
+.featured .content .details .name,.price, .button-featured {
+  font-size: 2vh;
+  font-family: 'poppins', sans-serif;
+  text-align: center;
+  /* background-color: yellow; */
+}
+
+.featured .content .details .name {
+  margin-top:-0.1rem ;
+}
+
+.featured .content .details .price {
+  margin-top: -1rem;
+}
+
+/* button */
+.featured .content .details .button-featured {
+    font-size: 2vh;
+    font-weight: 700;
+    background-color:coral;
+    color: aliceblue;
+    padding: 1vw 13.5vh;
+   opacity: 0;
+    border: none;
+    object-position: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.featured .content:hover .details .button-featured:hover {
+  color:  #1d1d1d;
+}
+
+.featured .content:hover .details .button-featured {
+opacity: 1;
+transition-duration: 0.5s;
+  color:white;
+}
+
+
+/* banner section */
+.banner {
+  background-image: url(img/banner/2.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.teks-banner {
+  box-sizing: border-box;
+  box-sizing: content-box;
+  color: white;
+  /* background-color: purple; */
+  position: absolute;
+  font-family: 'poppins', sans-serif;
+  transform: translate(0,13vh);
+  left: 10vw;
+  font-size: 3vh;
+}
+
+.banner .teks-banner .h4-banner {
+  font-weight: 50;
+  opacity: 0.8;
+  margin-block-end: -1.5rem;
+}
+
+.banner .teks-banner .h1-banner {
+line-height: 6vh;
+}
+
+.banner .teks-banner .h1-banner span {
+  color:coral;
+  background-blend-mode:difference ;
+}
+
+.banner .teks-banner .button-banner  {
+  font-size: 3vh;
+  font-weight: 700;
+  background-color:coral;
+  color: aliceblue;
+  padding: 1vw 5vh;
+  border: none;
+  object-position: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.banner .teks-banner .button-banner:hover {
+  color: #1d1d1d;
+  transition-duration: 0.5s;
+}
+
+/* footer section */
+/* all body */
+.footer {
+  background-color: #222222;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.footer .footer-body {
+  box-sizing: border-box;
+  width: 85%;
+  height: 80vh;
+  display: grid;
+  box-sizing: border-box;
+  align-items: baseline;
+  margin-block-end: -10vh;
+  grid-template-areas: 
+  "head featured contact instagram instagram" 
+  "payment credit medsos instagram instagram";
+  font-family: 'poppins', sans-serif;
+}
+
+
+/* head */
+.footer .head-footer {
+  grid-area: head;
+  height: 100%;
+}
+
+.footer .head-footer .img-head-footer {
+  margin-block-end: -2vh;
+}
+
+.footer .head-footer .txt-head {
+  width: 80%;
+  font-size: 1vw;
+  color: white;
+  opacity: 0.7;
+  margin-block-start: 3vh;
+}
+
+/* featured */
+.footer .featured-footer {
+  grid-area: featured;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.footer .featured-footer .title-featured {
+  margin-left: 2.5rem;
+  color: white;
+}
+
+.footer .featured-footer .link-footer {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 5vh;
+}
+
+/* animate */
+.footer .featured-footer .link-footer:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer .featured-footer .link-footer::before {
+  margin-left: auto;
+}
+
+.footer .featured-footer .link-footer::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.footer .featured-footer .link-footer:hover::after {
+  width: 50%;
+}
+
+
+/* contact */
+.footer .contact-footer {
+line-height: 14px;
+  grid-area: contact;
+  height: 100%;
+  color: white;
+  margin-right: 10vh;
+}
+
+.footer .contact-footer .content-footer{
+  color: white;
+  width: 25vh;
+}
+
+.footer .contact-footer .content-footer a{
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+} 
+
+.footer .contact-footer .content-footer a:hover {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.footer .instagram-footer {
+    height: 35rem;
+    color: white;
+    grid-area: instagram;
+}
+
+.footer .instagram-footer .insta-footer {
+  width: 13vh;
+}
+
+
+/* payment */
+.footer .payment-footer {
+ grid-area: payment;
+ margin-right: 5vw;
+}
+
+/* credit */
+.footer .credit-footer {
+  grid-area: credit;
+  color: white;
+  margin-right: 5vw;
+  width: 40vh;
+  opacity: 0.7;
+}
+
+/* medsos */
+.footer .medsos-footer {
+  color: white;
+  font-size: 5vh;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.footer .medsos-footer .ri-github-fill:hover,.ri-facebook-circle-fill:hover, .ri-instagram-fill:hover {
+  color: coral;
+}
+
+.footer .medsos-footer .ig-medsos {
+  color: white;
+  text-decoration: none;
+}
+/* media query */
+
+ /*pc*/
+@media (min-width:1500px) {
+/* hero section */
+/* hero teks */
+.hero .teks ul {
+  font-size: 2vw;
+}
+
+.hero .teks ul h1 {
+  font-size: 4rem;
+}
+
+.hero .teks ul p {
+  font-size: 1.5vw;
+  width:45rem;
+}
+
+.hero .teks ul button {
+  font-size: 2.5vw;
+}
+
+/* featured section */
+/* img */
+.featured .content img {
+  min-width: 20vw;
+}
+
+}
+
+
+/* Dekstop */
+@media (min-width: 1024px) and (max-width:1234px) {
+  /* hero section */
+  .hero .teks ul p {
+    /* background-color: green; */
+  }
+
+
+/* footer section */
+/* all body */
+.footer .footer-body {
+  box-sizing: border-box;
+  width: 85%;
+  height: 70vh;
+
+  box-sizing: border-box;
+  grid-template-areas: 
+  "head featured contact" 
+  "instagram instagram"
+  "payment credit medsos";
+  font-family: 'poppins', sans-serif;
+}
+
+
+/* head */
+.footer .head-footer {
+  grid-area: head;
+}
+
+.footer .head-footer .txt-head {
+  font-size: 1.5vh;
+}
+
+/* featured */
+.footer .featured-footer {
+  grid-area: featured;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .featured-footer .link-footer {
+  line-height: 4vh;
+}
+
+/* contact */
+.footer .contact-footer {
+  line-height: 14px;
+    grid-area: contact;
+    color: white;
+    margin-right: 5vw;
+  }
+
+
+/* instagram*/
+.footer .instagram-footer {
+  height: 20rem;
+box-sizing: border-box;
+  color: white;
+  grid-area: instagram;
+display: flex;
+flex-direction: column;
+}
+
+.footer .instagram-footer .insta-footer {
+width: 10vh;
+}
+
+  /* payment */
+  .footer .payment-footer {
+    background-color: brown;
+   grid-area: payment;
+  
+  }
+  
+  /* credit */
+  .footer .credit-footer {
+    background-color: cadetblue;
+    grid-area: credit;
+  
+  }
+
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* navbar */
+    /* navbar logo */
+.navbar .navbar-logo {
+    margin-left: 1rem;
+}
+    /* navbar link */
+    .navbar .navbar-container ul a {
+      margin-left: 1.5vw;
+    }
+
+
+    /* navbar button */
+    .navbar .navbar-container input {
+    height: 3vw;
+    width: 72vw;
+    border-radius: 20px;
+    }
+
+      /* hero section */
+  .hero {
+    background-image: url(img/back3.jpg);
+    background-position: center;
+  }
+
+  /* hero teks */
+    .hero .teks ul {
+      width: 57vw;
+      right: 0;
+      margin-top: 15vh;
+    }
+
+    .hero .teks ul h1 {
+        width:60vw;
+        font-size: 2.7rem;
+    }
+
+
+    /* product new section */
+    .product-new  {
+      display: flex;
+      width: 100vw;
+    }
+
+    .product-new .fragment {
+      background-color: purple;
+     height: 50vw;
+    }
+
+    /* product new img */
+    .product-new .fragment img {
+      width: 40vw;
+
+    }
+
+      /* product new 1 */
+    .product-new .fragment .img-1 {
+      width: 100vw;
+    }
+
+    .product-new .fragment .h2-1{
+      margin-left: 3rem;
+      margin-top: -20rem;
+      font-size: 2rem;
+      width: 20rem;
+      background-color: red;
+    }
+
+    .product-new .fragment .button-1 {
+      margin-left: 3rem;
+      margin-top: -5rem;
+      font-size: 1.2rem;
+    }
+
+    /* product new 2 */
+    .product-new .fragment .img-2 {
+      width: 50vw;
+    }
+
+    .product-new .fragment .h2-2{
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .product-new .fragment .button-2 {
+      margin-left: 16vw;
+      font-size: 1.2rem;
+      margin-top: 5rem;
+
+    }
+
+      /* product new 3 */
+    .product-new .fragment .img-3 {
+      width: 50vw;
+    }
+
+    .product-new .fragment .h2-3 {
+      display: flex;
+      justify-content: end;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+
+    }
+    
+    .product-new .fragment .button-3 {
+      font-size: 1.2rem;
+      margin-left: 33vw;
+      mix-blend-mode:darken;
+      margin-top: 5rem;
+    }
+
+
+    /* featured,dress,watches section */
+    /* header */
+    .featured .header {
+    margin-block-start: 35rem;
+    font-size: 2vh;
+    }
+
+    .featured .header-dress {
+      font-size: 2vh;
+    }
+
+    .featured .header-dress h1::after{
+      content: "";
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid coral;
+      margin-left: 40vw;
+      width: 17vw;
+      margin-top: 0.5rem;
+    }
+
+    .featured .header h1::after{
+      content: "";
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid coral;
+      margin-left: 40vw;
+      width: 17vw;
+      margin-top: 0.5rem;
+    }
+
+    /* img*/
+
+
+    /* img */
+
+
+
+/* footer section */
+/* all body */
+.footer {
+width: 100%;
+height: 70vh;
+}
+
+.footer .footer-body {
+  box-sizing: border-box;
+  width: 95%;
+  height: 50vh;
+  box-sizing: border-box;
+  grid-template-areas: 
+  "head featured contact" 
+  "instagram instagram instagram"
+  "payment credit medsos";
+  font-family: 'poppins', sans-serif;
+  margin-block-end: 7vh;
+}
+
+
+/* head */
+.footer .head-footer {
+  grid-area: head;
+}
+
+.footer .head-footer .txt-head {
+  font-size: 1.5vh;
+}
+
+/* featured */
+.footer .featured-footer {
+  grid-area: featured;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer .featured-footer .link-footer {
+  line-height: 4vh;
+}
+
+/* contact */
+.footer .contact-footer {
+  line-height: 14px;
+    grid-area: contact;
+    color: white;
+
+    margin-inline-start: -15vh;
+  }
+
+.footer .contact-footer .link-contact-footer {
+  line-height:30px;
+}
+
+/* instagram*/
+.footer .instagram-footer {
+  height: 20rem;
+  width:70vh;
+box-sizing: border-box;
+  color: white;
+flex-direction: column;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.footer .instagram-footer .insta-footer {
+width: 10vh;
+}
+
+/* payment,credit,medsos */
+.footer .payment-footer, .credit-footer, .medsos-footer {
+  margin-block-start: -10vh;
+}
+  /* payment */
+  .footer .payment-footer {
+   grid-area: payment;
+  }
+  
+  /* credit */
+  .footer .credit-footer {
+    grid-area: credit;
+    margin-inline-end: 10vh;
+    width: 25vh;
+  }
+
+  /* medsos */
+  .footer .medsos-footer {
+width: 25vh;
+margin-inline-start: -5vh;
+  }
+
+}
+
+/* Handphone */
+@media (max-width: 767px) {
+
+    /* navbar sidebar*/
+    /* logo sidebar */
+    .navbar .navbar-container .body-link-navbar::before {
+      content: url(img/logo2.png);
+      position: absolute;
+      object-fit: cover;
+      top: 10vh;
+      margin-inline-start: -9vh;
+      }
+
+
+    /* body sidebar */
+    .navbar .navbar-container .body-link-navbar  {
+      position: fixed;
+      z-index: 6500;
+      text-align: center;
+      margin-top: -1px;
+      transition: 0.5s;
+      width: 60vw;
+      height: 110%;
+      bottom: 0;
+      top: -3rem;
+      padding-top:10rem ;
+      right:-65vw; 
+      background-color:#111;
+      margin-inline-end: -1rem;
+
+    }
+
+
+    /* link sidebar */
+  .navbar .navbar-container .link-navbar{
+    display: block;
+    display: flex;
+    z-index: 7000;
+    color: #818181;
+    padding: 5vw 5vw 5vw 10vw;
+    border-top: 2px solid #818181;
+    border-bottom: 1px solid #818181;
+    text-decoration: none;
+    font-size: 2vh;
+    display: block;
+  }
+
+  .navbar .navbar-container .link-navbar:hover {
+    color: coral;
+  }
+
+    /* button sidebar */
+    #closebtn {
+      display:block;
+      z-index: 9999;
+      color: #818181;
+      position: fixed;
+      text-decoration: none;
+      top: 0;
+      right: -20px;
+      font-size: 4vh;
+    }
+
+    #main {
+      display: inline-block;
+    }
+
+    .openbtn {
+      margin: 1vw;
+    }
+  /* navbar logo */
+  .navbar .navbar-logo {
+    margin-top: 5vw;
+
+  }
+
+  /* navbar container */
+  .navbar-container i {
+    /* background-color: red; */
+  }
+
+/* navbar button */
+  .navbar .navbar-container i {
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .navbar .navbar-container input{
+    display: block;
+    width: 34vw;
+    height: 7vw;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  /* hero section */
+  .hero {
+    background-image: url(img/back2.jpg);
+    background-position: center;
+  }
+
+  /* hero teks */
+  .hero .teks ul {
+    font-size: 1vh;
+    width: 60vw;
+    right: 0;
+    margin-top: 15vh;
+  }
+
+  .hero .teks ul h1 {
+    font-size: 3vh;
+    margin-block-end: -1vh;
+  }
+
+  .hero .teks ul h5 {
+    margin-block-end: -3vh;
+  }
+
+  .hero .teks ul p {
+    font-size: 1.5vw;
+    width: 50vw;
+  }
+
+  /* button */
+  .hero .teks ul button {
+    font-size: 10px;
+
+  }
+
+  /* new product section */
+  /* body */
+  .product-new .fragment {
+   height: 100%;
+  }
+
+  /* img */
+  .product-new .fragment img {
+    width: 100vw;
+
+  }
+  
+  .product-new .fragment img:hover {
+  }
+
+  /* teks */
+  .product-new .fragment h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+  }
+
+  .product-new .fragment button {
+    font-size: 5vw;
+  }
+
+  /* button */
+  .product-new .fragment .button-1 {
+    right: 0;
+    margin-left: 37vw;
+  }
+  
+  .product-new .fragment .button-2 {
+    right: 0;
+    margin-left: 35vw;
+  }
+
+  .product-new .fragment .button-3 {
+    right: 0;
+    margin-left: 37vw;
+  }
+
+
+      /* featured section */
+    /* body-content */
+    .featured .header {
+    margin-block-start: 70rem;
+    }
+
+    .featured ul {
+      margin-left: -10vw;
+    }
+
+
+    /* banner section */
+    .banner {
+      background-position: 65%;
+    }
+
+    .banner .teks-banner {
+      font-size: 2vh;
+      box-sizing: border-box;
+    }
+
+     /* featured,dress,watches section */
+    /* header */
+    .featured .header {
+      font-size: 2vh;
+      }
+  
+      .featured .header-dress {
+        font-size: 2vh;
+      }
+  
+      .featured .header-dress h1::after{
+        content: "";
+        position: absolute;
+        display: block;
+        border-bottom: 2px solid coral;
+        margin-left: 37vw;
+        width: 25vw;
+        margin-top: 0.5rem;
+      }
+  
+      /* featured */
+      .featured .header h1::after{
+        content: "";
+        position: absolute;
+        display: block;
+        border-bottom: 2px solid coral;
+        margin-left: 37vw;
+        width: 25vw;
+        margin-top: 0.5rem;
+      }
+
+
+          /* footer section */
+/* all body */
+.footer .footer-body {
+  box-sizing: border-box;
+  grid-template-areas: 
+  "head"
+  "featured"
+  "contact"
+  "instagram"
+  "payment"
+  "credit"
+  "medsos";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-block-end: 10vw;
+}
+
+.footer {
+  width: 100%;
+  min-height: 180vh;
+  }
+  
+
+  /* head */
+  .footer .head-footer {
+    grid-area: head;
+
+  }
+  
+  .footer .head-footer .img-head-footer {
+    display: flex;
+
+  }
+
+  .footer .head-footer .txt-head {
+    font-size: 1.5vh;
+
+  }
+  
+  /* featured */
+  .footer .featured-footer {
+    grid-area: featured;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: -5vh;
+    line-height: 1px;
+  }
+
+  .footer .featured-footer .title-featured {
+    margin-inline-start: -0.2vh;
+  }
+  
+  .footer .featured-footer .link-footer {
+    line-height: 4vh;
+    margin-inline-start: -5vh;
+  }
+  
+  /* contact */
+  .footer .contact-footer {
+    line-height: 14px;
+      grid-area: contact;
+      color: white;
+
+    }
+  
+    .footer .contact-footer .title-head-cntct {
+ 
+    }
+
+    .footer .contact-footer .content-footer {
+      width: 40vh;
+    }
+
+  .footer .contact-footer .link-contact-footer {
+
+    line-height: 1.5rem;
+    width: 50vh;
+  }
+
+  /* instagram*/
+  .footer .instagram-footer {
+    height: 20rem;
+  box-sizing: border-box;
+    color: white;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .footer .instagram-footer .title-instagram {
+
+  }
+
+  .footer .instagram-footer .insta-footer {
+  width: 10vh;
+  }
+  
+    /* payment */
+    .footer .payment-footer {
+     grid-area: payment;
+    
+    }
+    
+    /* credit */
+    .footer .credit-footer {
+      grid-area: credit;
+    
+    }
+  
+    /* medsos */
+    .footer .medsos-footer {
+  
+    }
+  
+
+}

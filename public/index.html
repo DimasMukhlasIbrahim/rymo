@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+        <!-- cdn -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- slider card -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>web</title>
+</head>
+<body>
+    <!-- navbar start -->
+<div class="body-navbar">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="img/logo1.png">
+        </div>
+    
+    <div class="navbar-container">
+    <ul>
+        <div class="body-link-navbar" id="mySidebar">
+        <a href="home" class="link-navbar">Home</a>
+        <a href="shop"class="link-navbar">Shop</a>
+        <a href="blog"class="link-navbar">Blog</a>
+        <a href="about"class="link-navbar">About</a>
+        <a href="contact"class="link-navbar">Contact us</a>   
+    </div>
+        <i class="ri-shopping-bag-line"></i>
+        <i class="ri-search-line"></i>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+        <input type="search" placeholder="Type here..."  class="input" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebtn">x</a>
+    </ul>
+    </div>
+
+
+    </div>
+</div>
+    <!-- navbar end -->
+
+    <!-- hero section start-->
+    <section id="beranda" class="hero">
+        <div class="teks">
+            <ul>
+            <h5>NEW ARRIVALS</h5>
+            <h1><span>Best Price</span> This Year</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam cupiditate obcaecati.
+            </p>
+            <button>Shop Now</button>
+        </ul>
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- brand section start -->
+<div class="brand">
+    <img src="img/brand/1.png">
+    <img src="img/brand/2.png">
+    <img src="img/brand/3.png">
+    <img src="img/brand/4.png">
+    <img src="img/brand/5.png">
+    <img src="img/brand/6.png">
+</div>
+    <!-- brand section end -->
+
+    <!-- product new section start-->
+    <div class="product-new">
+        <div class="fragment">
+        <img src="img/new/1.jpg (edit).jpg" class="img-1" id="img-1">
+        <h2 class="h2-1">EXTREME RARE SNEAKERS</h2>
+        <button class="button-1" id="button-product">SHOP NOW</button>
+        </div>
+        <div class="fragment">
+        <img src="img/new/5.jpg" class="img-2" id="img-2">
+        <h2 class="h2-2">AWESOME BLANK OUTFIT</h2>
+        <button class="button-2" id="button-product">SHOP NOW</button>
+        </div>
+        <div class="fragment">
+        <img src="img/new/3.jpg" class="img-3" id="img-3">
+        <h2 class="h2-3">SPORTWEAR UP TO 50% OF</h2>
+        <button class="button-3" id="button-product">SHOP NOW</button>
+        </div>
+    </div>
+    <!-- product new section end -->
+
+    <!-- featured section start -->
+    <div class="featured">
+        <div class="header">
+            <h1>OUR FEATURED</h1>
+            <P>Here you can check out our new product with fair price on eymo</P>
+        </div>
+
+        <ul>
+        <div class="content">
+            <img src="img/featured/1.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                </div>
+                <h5 class="name">Classic white shoes</h5>
+                <h4 class="price">Rp 149.000</h4>
+                <button class="button-featured" class="animate__animated animate__bounce">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/featured/2.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">Dark maroon red shoes</h5>
+                <h4 class="price">Rp 169.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/featured/3.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="name">Classic Black Backpack</h5>
+                <h4 class="price">  Rp 229.000 </h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/featured/4.png" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">gray waist bag</h5>
+                <h4 class="price">Rp 99.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+    </ul>
+
+    </div>
+    <!-- featured section end -->
+
+    <!-- banner section start -->
+    <div class="banner" id="banner">
+        <div class="teks-banner">
+            <h4 class="h4-banner">MID SEASON'S SALE</h4>
+            <h1 class="h1-banner">Autumn Collection <span><br>UP TO 20% OFF</br></span> </h1>
+            <a href="" class="button-banner">Shop Now</a>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- dress section start -->
+    <div class="featured">
+        <div class="header-dress">
+            <h1>Dresses & Jumpsuit</h1>
+            <P>Here you can check out our new product with fair price on eymo</P>
+        </div>
+
+        <ul>
+        <div class="content">
+            <img src="img/clothes/1.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                </div>
+                <h5 class="name">Classic white shoes</h5>
+                <h4 class="price">Rp 149.000</h4>
+                <button class="button-featured" class="animate__animated animate__bounce">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/clothes/2.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">Dark maroon red shoes</h5>
+                <h4 class="price">Rp 169.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/clothes/3.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="name">Classic Black Backpack</h5>
+                <h4 class="price">  Rp 229.000 </h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/clothes/4.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">gray waist bag</h5>
+                <h4 class="price">Rp 99.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+    </ul>
+
+    </div>
+    <!-- dress section end -->
+
+
+    <!-- watches section start -->
+    <div class="featured">
+        <div class="header-dress">
+            <h1>Best Watches</h1>
+            <P>Here you can check out our new product with fair price on eymo</P>
+        </div>
+
+        <ul>
+        <div class="content">
+            <img src="img/watches/1.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                </div>
+                <h5 class="name">Classic white shoes</h5>
+                <h4 class="price">Rp 149.000</h4>
+                <button class="button-featured" class="animate__animated animate__bounce">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/watches/2.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">Dark maroon red shoes</h5>
+                <h4 class="price">Rp 169.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/watches/3.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="name">Classic Black Backpack</h5>
+                <h4 class="price">  Rp 229.000 </h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/watches/4.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">gray waist bag</h5>
+                <h4 class="price">Rp 99.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+    </ul>
+    </div>
+    <!-- watches section end -->
+
+    <!-- shoes section start -->
+    <div class="featured">
+        <div class="header-dress">
+            <h1>Running Shoes</h1>
+            <P>Here you can check out our new product with fair price on eymo</P>
+        </div>
+
+        <ul>
+        <div class="content">
+            <img src="img/shoes/5.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                </div>
+                <h5 class="name">Classic white shoes</h5>
+                <h4 class="price">Rp 149.000</h4>
+                <button class="button-featured" class="animate__animated animate__bounce">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/shoes/6.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">Dark maroon red shoes</h5>
+                <h4 class="price">Rp 169.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/shoes/7.jpg">
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="name">Classic Black Backpack</h5>
+                <h4 class="price">  Rp 229.000 </h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="img/shoes/8.jpg" >
+            <div class="details">
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <h5 class="name">gray waist bag</h5>
+                <h4 class="price">Rp 99.000</h4>
+                <button class="button-featured">Buy Now</button>
+            </div>
+        </div>
+    </ul>
+    </div>
+    <!-- shoes section end -->
+
+
+    <!-- footer start -->
+<footer class="footer">
+    <div class="footer-body">
+    <div class="head-footer">
+        <img src="img/logo2.png" class="img-head-footer">
+        <p class="txt-head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quae ratione corporis numquam, expedita reiciendis!</p>
+    </div>
+
+    <div class="featured-footer">
+        <H2 class="title-featured">Featured</H2>
+        <ul>
+<a href="" class="link-footer">MEN</a>
+<a href="" class="link-footer">WOMEN</a>
+<a href="" class="link-footer">GIRLS</a>
+<a href="" class="link-footer">NEW ARRIVALS</a>
+<a href="" class="link-footer">SHOES</a>
+<a href="" class="link-footer">CLOTHS</a>
+        </ul>
+    </div>
+
+    <div class="contact-footer">
+        <h2 class="title-head-cntct">Contact Us</h2>
+        <div class="content-footer">
+            <h5>ADDRESSS</h5>
+            <a href="https://goo.gl/maps/YFXq3hauR5cx2EtH6?coh=178573&entry=tt" class="link-contact-footer">Jl. Tmp.Kalimulya Jl. Kebun Jati No.1, Pd. Rajeg, Depok,Kota Depok, Jawa Barat 16413</a>
+        </div>
+
+        <div class="content-footer">
+            <h5>PHONE</h5>
+            <a href="https://api.whatsapp.com/send?phone=6287857106865" class="link-contact-footer" >Hubungi Kami</a>
+        </div>
+
+        <div class="content-footer">
+            <h5>Gmail</h5>
+            <a href="mailto:Rymo.Official@gmail.com" class="link-contact-footer">Rymo.Official@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="instagram-footer">
+        <h2 class="title-instagram">INSTAGRAM</h2>
+        <div class="img-insta">
+    <img src="img/insta/1.jpg"  class="insta-footer">
+    <img src="img/insta/2.jpg" class="insta-footer">
+    <img src="img/insta/3.jpg" class="insta-footer">
+    <img src="img/insta/4.jpg"  class="insta-footer">
+    <img src="img/insta/5.jpg"  class="insta-footer">
+    <img src="img/insta/6.jpg"  class="insta-footer">
+</div>
+    </div>
+
+    <div class="payment-footer">
+    <img src="img/payment.png" class="img-payment">
+    </div>
+
+    <div class="credit-footer">
+    <p>rymo eCommerce &copy 2023. All Rights Reserved</p>
+    </div>
+
+    <div class="medsos-footer">
+        <i class="ri-github-fill" class="github-medsos"></i>
+        <a href="https://instagram.com/dmsmkhls?igshid=NTc4MTIwNjQ2TQ" class="ig-medsos"><i class="ri-instagram-fill"></i></i></a>
+        <i class="ri-facebook-circle-fill" class="facebook-medsos"></i>
+
+    </div>
+    
+</footer>
+    <!-- footer end -->
+
+    <!-- data feather -->
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>
